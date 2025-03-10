@@ -1,0 +1,3 @@
+langchain-mcp-adapters
+psycopg2-binary
+langgraph.prebuilt
