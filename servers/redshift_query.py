@@ -3,6 +3,10 @@ from psycopg2.extras import RealDictCursor
 import os
 from typing import List, Dict, Any
 
+from dotenv import load_dotenv
+
+load_dotenv()
+
 class RedshiftQuery:
     def __init__(self):
         self.conn = None
@@ -51,13 +55,13 @@ def query_redshift(sql: str) -> List[Dict[str, Any]]:
     :param sql: 要执行的SQL查询
     :return: 查询结果列表，每个结果是一个字典
     """
-    return [{"gross_rate": 3.2, "net_rate": 2 }]
+
     rq = RedshiftQuery()
     return rq.execute_query(sql)
 
 # 使用示例
 if __name__ == "__main__":
-    test_sql = "SELECT * FROM your_table LIMIT 5"
+    test_sql = "SELECT * FROM click_url_infos LIMIT 5"
     results = query_redshift(test_sql)
     for row in results:
         print(row)

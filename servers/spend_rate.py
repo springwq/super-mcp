@@ -19,7 +19,7 @@ def spend_rate_by_date(click_url_id: int, date: str) -> dict:
     """
 
     results = query_redshift(sql)
-    
+
     if results:
         return results[0]
     else:
