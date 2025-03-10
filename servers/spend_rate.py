@@ -9,7 +9,7 @@ mcp = FastMCP("Spend Rate")
 
 @mcp.tool()
 def spend_rate_by_date(click_url_id: int, date: str) -> dict:
-    """Get the Gross CPI and Net CPI from the redshift database according to the corresponding date and click_url_id"""
+    """Get the Gross Rate and Net Rate from the redshift database according to the corresponding date and click_url_id"""
     
     sql = f"""
     SELECT gross_cpi, net_cpi 
