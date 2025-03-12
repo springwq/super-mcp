@@ -1,5 +1,9 @@
 langgraph
+langchain
 langchain-aws
 langchain-mcp-adapters
 psycopg2-binary
 langgraph.prebuilt
+mcp>=1.2.0
+httpx>=0.24.0
+python-dotenv>=1.0.0
