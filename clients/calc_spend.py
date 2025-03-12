@@ -49,7 +49,8 @@ async def main():
         print("Available tools:", [tool.name for tool in client.get_tools()])
         print("Sending query to agent...")
         review_requested = await agent.ainvoke(debug=True, input={
-            "messages": "返回 2025-03 月份的 campaign spend 数据，找到 2025-03-01 的 campaign spend 数据"
+            "messages": """根据 2025-03-06 附近日期的数据，按天细分，然后找到 2025-03-06 的 campaign spend 最高的 campaign。
+            """
         })
 
         print("Processing response...")
