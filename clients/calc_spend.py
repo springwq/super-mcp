@@ -33,14 +33,6 @@ async def setup_servers(client):
         encoding_error_handler="ignore",
     )
 
-    print("Connecting to spend_rate server...")
-    await client.connect_to_server(
-        "spend_rate",
-        command=python_path,
-        args=["servers/spend_rate.py"],
-        encoding_error_handler="ignore",
-    )
-
     print("Connecting to timeserver...")
     await client.connect_to_server(
         "timeserver",
