@@ -1,6 +1,7 @@
 # Direct Spend Automations
 
 - 这个项目是一个 Direct Spend 自动录入系统，支持从 FeedMob 系统和 Parter 系统分别获取 Gross Spend 和 Net Spend
+- 根据 Spend Request 表单实现 Spend 自动录入
 - 该系统集成了 AWS Bedrock 的 Claude 3.5 模型，并使用 LangChain 和 MCP 适配器进行数据处理和分析。
 
 
@@ -27,6 +28,10 @@
   - Jampp MCP Server
   - Kayzen MCP Server
 - 自动数据验证
+
+### 根据 Spend Request 表单实现 spend 录入
+- 分别调用不同的 MCP Server 获取 Gross Spend 和 Net Spend
+- 根据表单内容，实现 spend 计算
 
 
 ## 安装说明
