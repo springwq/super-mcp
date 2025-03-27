@@ -18,7 +18,7 @@
 
 ## 主要功能
 
-### Campaign Spend 查询工具
+### 来自 Partner 的 Campaign Spend 查询工具
 
 - 智能查询重试机制，支持多种查询策略：
   - 自动修正未来日期查询
