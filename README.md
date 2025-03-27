@@ -4,7 +4,6 @@
 - 该系统集成了 AWS Bedrock 的 Claude 3.5 模型，并使用 LangChain 和 MCP 适配器进行数据处理和分析。
 
 
-
 ## 技术栈
 
 - Python 3.11+
@@ -50,8 +49,6 @@ pip install -r requirements.txt
 - 配置以下必要的环境变量：
   - AWS Bedrock 访问凭证
   - 其他必要的服务配置
-
-
 
 
 ## 许可证
