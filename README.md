@@ -26,9 +26,8 @@
   - 自动切换到最近可用数据
 - 集成了多个 MCP Server：
   - Jampp MCP Server
-  - Time Server
+  - Kayzen MCP Server
 - 自动数据验证
-- 交互式命令行界面
 
 
 ## 安装说明
